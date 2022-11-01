@@ -11,7 +11,7 @@ document.querySelectorAll('[wm-nav]').forEach(link => {
                 conteudo.innerHTML = html
 
                 if (urlPath.match(/requerimento\.html$/gi)) {
-                    applyDropDown();
+                    renderDropdown(categorias, "A - Residencial")
                 }
             })
     }
