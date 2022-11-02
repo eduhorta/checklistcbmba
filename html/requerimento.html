@@ -103,14 +103,14 @@
             </td>
             <td style="width:177.2pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.65pt;">
                 <p style='margin-bottom:1px;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <select id="divisao">
-                        <option>Clique aqui</option>
-                        <option>A - Residencial</option>
-                        <option>B - Serviço de Hospedagem</option>
-                        <option>C - Comercial</option>
-                        <option>D - Serviço Profissional</option>
-                        <option>E - Educação e Cultura Física</option>
-                        <option>H - Serviço de Saúde e Instituicional</option>
+                    <select name="edificacao" id="divisao" class="custom-select">
+                        <option value="">Clique aqui</option>
+                        <option value="residencial">A - Residencial</option>
+                        <option value="hospedagem">B - Serviço de Hospedagem</option>
+                        <option value="comercial">C - Comercial</option>
+                        <option value="servico">D - Serviço Profissional</option>
+                        <option value="educacao">E - Educação e Cultura Física</option>
+                        <option value="saude">H - Serviço de Saúde e Instituicional</option>
                     </select>
                     <span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
             </td>
@@ -119,7 +119,7 @@
             </td>
             <td colspan="2" style="width:134.8pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:18.65pt;">
                 <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <select id="ocupacao">
+                    <select name="edificacaoClasse" id="ocupacao" class="custom-select">
 
                     </select>
                     <span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
@@ -200,11 +200,21 @@
         </tr>
     </tbody>
 </table>
+<a id="linkReq" href="http://www.cbm.ba.gov.br/sites/default/files/2021-05/requerimento_padrao_2021_padrao_sistema_novo_2_1.doc">DOWNLOAD REQUERIMENTO</a>
 </div>
+
 
 
 <style>
     #requerimento {
-        border-radius: 5px;
+        border-radius: 5px;        
+    }
+    #linkReq {
+        position: absolute;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 40px;
+        background: white;
+        width: 40vw;
     }
 </style>

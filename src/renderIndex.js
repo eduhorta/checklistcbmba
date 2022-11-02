@@ -17,45 +17,30 @@ document.querySelectorAll('[wm-nav]').forEach(link => {
     }
 })
 
-let categorias = [
-    ["A - Residencial", "A-1 - Habitação unifamiliar"],
-    ["A - Residencial", "A-2 - Habitação multifamiliar"],
-    ["A - Residencial", "A-3 - Habitação coletiva"],
-    ["B - Serviço de Hospedagem", "B-1 - Hotel e assemelhado"],
-    ["B - Serviço de Hospedagem", "B-2 - Hotel Residencial"],
-    ["C - Comercial", "C-1 - Comércio com baixa carga de incêndio"],
-    ["D - Serviço Profissional", "D-1 - Local para prestação de serviço profissional"],
-    ["D - Serviço Profissional", "D-4 - Laboratórios de análises clínicas sem internação"],
-    ["E - Educacional e Cultura Física", "E-1 - Escola em geral"],
-    ["E - Educacional e Cultura Física", "E-3 - Espaço para cultura física"],
-];
+function applyDropDown() {
+let categorias = { 
+    residencial:["A-1 - Habitação unifamiliar", "A-2 - Habitação multifamiliar", "A-3 - Habitação coletiva"],
+    hospedagem:["B-1 - Hotel e assemelhado", "B-2 - Hotel Residencial"],
+    comercial:["C-1 - Comércio com baixa carga de incêndio"],
+    servico:["D-1 - Local para prestação de serviço", "D-4 - Laboratórios de análises clínicas"],
+    educacao:["E-1 - Escola em geral", "E-3 - Espaço para cultura física"],
+    saude:["H-6 - Clínica e consultório médico e odontológico"]
+};
 
-function renderDropdown(data, level1Filter) {
+let main = document.getElementById('divisao');
+let sub = document.getElementById('ocupacao');
 
+main.addEventListener('change', function() {
 
-    const filteredArray = data.filter(r => r[0] == level1Filter);
+    let selected_option = categorias[this.value];
 
-    const uniqueOptions = new Set();
-    filteredArray.forEach(r => uniqueOptions.add(r[1]));
+    while(sub.options.length > 0) {
+        sub.options.remove(0);
+    }
+    Array.from(selected_option).forEach(function(el) {
+        let option = new Option(el, el);
 
-    const uniqueList = [...uniqueOptions];
-
-    const selectLevel2 = document.getElementById("ocupacao");
-    selectLevel2.innerHTML = "";
-
-    uniqueList.forEach(item => {
-        const option = document.createElement("option");
-        option.textContent = item;
-        selectLevel2.appendChild(option);
-        
+        sub.appendChild(option);
     });
-}
 
-function applyDropDown(){
-   const selectLevel1Value = document.getElementById("divisao").value;
-   renderDropdown(categorias, selectLevel1Value)
-
-}
-
-document.getElementById("divisao").addEventListener("change", applyDropDown());
-document.addEventListener("DOMContentLoaded", applyDropDown);
+})};
