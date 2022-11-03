@@ -67,12 +67,26 @@
         </tr>
         <tr>
             <td colspan="6" style="width:494.45pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Ocupa&ccedil;&atilde;o (Divis&atilde;o conforme tabela 1 do Decreto Estadual 16.302/15):</span> Divisão conforme preenchido em requerimento padrão</p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Ocupa&ccedil;&atilde;o (Divis&atilde;o conforme tabela 1 do Decreto Estadual 16.302/15):</span>
+                    <select name="edificacao" id="divisao" class="custom-select">
+                        <option value="">Clique aqui</option>
+                        <option value="residencial">A - Residencial</option>
+                        <option value="hospedagem">B - Serviço de Hospedagem</option>
+                        <option value="comercial">C - Comercial</option>
+                        <option value="servico">D - Serviço Profissional</option>
+                        <option value="educacao">E - Educação e Cultura Física</option>
+                        <option value="saude">H - Serviço de Saúde e Instituicional</option>
+                    </select>
+                </p>
             </td>
         </tr>
         <tr>
             <td colspan="6" style="width:494.45pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:12.0pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Descri&ccedil;&atilde;o do uso ou ocupa&ccedil;&atilde;o:</span>Ocupação conforme preenchido em requerimento padrão</p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Descri&ccedil;&atilde;o do uso ou ocupa&ccedil;&atilde;o:</span>
+                    <select name="edificacaoClasse" id="ocupacao" class="custom-select">
+
+                    </select>
+                </p>
             </td>
         </tr>
         <tr>
@@ -134,15 +148,30 @@
         </tr>
     </tbody>
 </table>
-<a id="linkAnexo" href="http://www.cbm.ba.gov.br/sites/default/files/2019-06/it_42_-anexo_b_0.docx">TESTEEEEEEEEEEEEEEEE</a>
+
+<div id="marginAnexo">
+    <a id="linkAnexo" href="http://www.cbm.ba.gov.br/sites/default/files/2019-06/it_42_-anexo_b_0.docx">DOWNLOAD ANEXO B</a>
+</div>
 </div>
 
 <style>
     #anexo {
         width: 80%;
         border-radius: 5px;
+        height: 60vh;
     }
     #linkAnexo {
         margin-top: 10px;
+        font-size: 14px;
+        background: red;
+        color: white;
+        padding: 10px 0px;
+        width: 30vw;
+        border-radius: 5px;
+    }
+    #marginAnexo{
+        margin-top: 30px;
+        text-align: center;
+        font-size: 18px;
     }
 </style>

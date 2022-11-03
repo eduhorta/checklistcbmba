@@ -12,6 +12,8 @@ document.querySelectorAll('[wm-nav]').forEach(link => {
 
                 if (urlPath.match(/requerimento\.html$/gi)) {
                     applyDropDown();
+                } else if (urlPath.match(/anexo\.html$/gi)) {
+                    applyDropDown();
                 }
             })
     }

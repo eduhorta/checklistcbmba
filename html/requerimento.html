@@ -1,4 +1,4 @@
-<div id="requerimento">
+<div id="requerimento">    
 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
 <table style="width: 4.8e+2pt;border: none;border-collapse:collapse;">
     <tbody>
@@ -118,7 +118,7 @@
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Ocupa&ccedil;&atilde;o:</span></p>
             </td>
             <td colspan="2" style="width:134.8pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:18.65pt;">
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'>
+                <p style='margin:0;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'>
                     <select name="edificacaoClasse" id="ocupacao" class="custom-select">
 
                     </select>
@@ -200,7 +200,9 @@
         </tr>
     </tbody>
 </table>
+<div id="marginReq">
 <a id="linkReq" href="http://www.cbm.ba.gov.br/sites/default/files/2021-05/requerimento_padrao_2021_padrao_sistema_novo_2_1.doc">DOWNLOAD REQUERIMENTO</a>
+</div>
 </div>
 
 
@@ -208,13 +210,19 @@
 <style>
     #requerimento {
         border-radius: 5px;        
+        height: 80vh;
+        width: 47vw;
     }
-    #linkReq {
-        position: absolute;
+    #linkReq {       
+        font-size: 14px;
+        background: red;
+        color: white;
+        padding: 10px 0px;
+        width: 30vw;
+        border-radius: 5px;        
+    }
+    #marginReq {
+        margin-top: 40px;
         text-align: center;
-        margin-top: 10px;
-        font-size: 40px;
-        background: white;
-        width: 40vw;
     }
 </style>
