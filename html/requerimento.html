@@ -1,4 +1,5 @@
-<div id="requerimento">    
+<div id="requerimento">
+    <p id="tituloReq">Informar código CNAE para preenchimento automático dos campos Risco, Divisão e Ocupação.</p>    
 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
 <table style="width: 4.8e+2pt;border: none;border-collapse:collapse;">
     <tbody>
@@ -8,7 +9,7 @@
             </td>
             <td colspan="4" style="width:382.9pt;border-top:solid black 0.1pt;border-left:none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.6pt;">
                 <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">EMPRESA EXEMPLO</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
                 <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
             </td>
         </tr>
@@ -17,14 +18,19 @@
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Raz&atilde;o Social:</span></p>
             </td>
             <td style="width:177.2pt;border:solid black 0.1pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:19.95pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">EMPRESA EXEMPLO LTDA</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
             </td>
             <td style="width:70.9pt;border-top:none;border-left:none;border-bottom:  solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.95pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;text-align:center;'><span style='font-family:"Times New Roman",serif;'>C&oacute;digo</span></p>
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;text-align:center;'><span style='font-family:"Times New Roman",serif;'>CNAE:</span></p>
             </td>
             <td colspan="2" style="width:134.8pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.95pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'>
+                    
+                    <!-- CAMPO DO CNAE -->
+                    <input type="text" id="idCNAE" placeholder="Digitar apenas números"></input><input type="submit" id="submitCNAE" onclick="aplicarCNAE()"></input>
+                
+                </p>
             </td>
         </tr>
         <tr>
@@ -32,13 +38,13 @@
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>CNPJ:</span></p>
             </td>
             <td style="width:177.2pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.65pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">00.000.000/0000-00</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
             </td>
             <td colspan="2" style="width:99.4pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm .5pt 0cm .5pt;height:19.65pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;Porte da Institui&ccedil;&atilde;o:</span></p>
             </td>
             <td style="width:106.3pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm .5pt 0cm .5pt;height:19.65pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">ME, MEI, PESSOA FÍSICA, ETC</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
             </td>
         </tr>
         <tr>
@@ -46,13 +52,13 @@
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Logradouro</span><span style='font-family:"Times New Roman",serif;'>:</span></p>
             </td>
             <td colspan="2" style="width:248.1pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt;">
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">RUA EXEMPLO</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
             </td>
             <td style="width:28.5pt;border-top:none;border-left:none;border-bottom:  solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>N&ordm;:</span></p>
             </td>
             <td style="width:106.3pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt;">
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">00</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
             </td>
         </tr>
         <tr>
@@ -60,13 +66,13 @@
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Complemento e Refer&ecirc;ncia:</span></p>
             </td>
             <td style="width:177.2pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:16.95pt;">
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">COMPLEMENTO EXEMPLO</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
             </td>
             <td style="width:70.9pt;border-top:none;border-left:none;border-bottom:  solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm .5pt 0cm .5pt;height:16.95pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>CEP:</span></p>
             </td>
             <td colspan="2" style="width:134.8pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:16.95pt;">
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">00000-000</span><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
             </td>
         </tr>
         <tr>
@@ -74,13 +80,13 @@
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Bairro:</span></p>
             </td>
             <td style="width:177.2pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.95pt;">
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">BAIRRO EXEMPLO</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
             </td>
             <td style="width:70.9pt;border-top:none;border-left:none;border-bottom:  solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm .5pt 0cm .5pt;height:15.95pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Munic&iacute;</span><span style='font-family:"Times New Roman",serif;'>pio:</span></p>
             </td>
             <td colspan="2" style="width:134.8pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:15.95pt;">
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">CIDADE EXEMPLO - BA</span><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
             </td>
         </tr>
         <tr>
@@ -88,13 +94,19 @@
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Risco (Mj/m&sup2;):</span></p>
             </td>
             <td style="width:177.2pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.65pt;">
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'>300<span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span id="cargaIncendio">
+
+                    <!-- CAMPO DO RISCO -->
+                    <span id="risco"></span>
+
+
+                </span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
             </td>
             <td style="width:70.9pt;border-top:none;border-left:none;border-bottom:  solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm .5pt 0cm .5pt;height:18.65pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Altura:</span></p>
             </td>
             <td colspan="2" style="width:134.8pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:18.65pt;">
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">TÉRREA</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
             </td>
         </tr>
         <tr>
@@ -102,16 +114,11 @@
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Divis&atilde;o:</span></p>
             </td>
             <td style="width:177.2pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.65pt;">
-                <p style='margin-bottom:1px;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <select name="edificacao" id="divisao" class="custom-select">
-                        <option value="">Clique aqui</option>
-                        <option value="residencial">A - Residencial</option>
-                        <option value="hospedagem">B - Serviço de Hospedagem</option>
-                        <option value="comercial">C - Comercial</option>
-                        <option value="servico">D - Serviço Profissional</option>
-                        <option value="educacao">E - Educação e Cultura Física</option>
-                        <option value="saude">H - Serviço de Saúde e Instituicional</option>
-                    </select>
+                <p style='margin-bottom:10px;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'>
+
+                    <!-- CAMPO DA DIVISÃO -->
+                    <span id="divisao"></span>
+
                     <span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
             </td>
             <td style="width:70.9pt;border-top:none;border-left:none;border-bottom:  solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm .5pt 0cm .5pt;height:18.65pt;">
@@ -119,9 +126,11 @@
             </td>
             <td colspan="2" style="width:134.8pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:18.65pt;">
                 <p style='margin:0;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'>
-                    <select name="edificacaoClasse" id="ocupacao" class="custom-select">
 
-                    </select>
+                    <!-- CAMPO DA OCUPAÇÃO -->
+                    <span id="ocupacao"></span>
+
+                    
                     <span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
             </td>
         </tr>
@@ -136,13 +145,13 @@
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Tipo de Servi&ccedil;o:</span></p>
             </td>
             <td colspan="2" style="width:141.7pt;border:solid black 0.1pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'>VISTORIA<br></p>
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">VISTORIA</span><br></p>
             </td>
             <td colspan="2" style="width:63.85pt;border:solid black 0.1pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&Aacute;rea Constru&iacute;da:</span></p>
             </td>
             <td colspan="2" style="width:155.9pt;border-top:solid black 0.1pt;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span><span style='font-family:"Times New Roman",serif;'>&nbsp;&nbsp;</span><span style='font-family:"Times New Roman",serif;'>m&sup2;</span></p>
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">00,00</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span><span style='font-family:"Times New Roman",serif;'>&nbsp;&nbsp;</span><span style='font-family:"Times New Roman",serif;'>m&sup2;</span></p>
             </td>
         </tr>
         <tr>
@@ -150,7 +159,7 @@
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Respons&aacute;vel T&eacute;cnico</span></p>
             </td>
             <td colspan="4" style="width:205.55pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">Apenas em caso de apresentar Projeto Contra Incêndio e Pânico</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
             </td>
             <td colspan="2" style="width:155.9pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;text-align:center;'><span style='font-family:  "Times New Roman",serif;'>CREA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CAU</span></p>
@@ -162,26 +171,26 @@
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Solicitante/Respons&aacute;vel</span></p>
             </td>
             <td colspan="5" style="width:233.9pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">FULANO PEREIRA DA SILVA</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
             </td>
             <td style="width:127.55pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; Cargo:</span><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; Cargo:</span><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><span id="textoExemplo">PROPRIETÁRIO</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
             </td>
         </tr>
         <tr>
             <td colspan="3" style="width:163.05pt;border-top:none;border-left:  solid black 0.1pt;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>CPF/ RG</span></p>
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">000.000.000-00</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
             </td>
             <td colspan="2" style="width:141.7pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;&Oacute;rg&atilde;o Expedidor:</span></p>
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">RECEITA</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
             </td>
             <td colspan="2" style="width:49.65pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;text-align:center;'><span style='font-family:"Times New Roman",serif;'>E-mail:</span></p>
             </td>
             <td style="width:127.55pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">fulanodasilva@email.com</span></p>
             </td>
         </tr>
         <tr>
@@ -189,13 +198,13 @@
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;text-align:center;'><span style='font-family:"Times New Roman",serif;'>Assinatura:</span></p>
             </td>
             <td colspan="4" style="width:240.95pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">ASSINATURA NORMAL OU DIGITAL</span></p>
             </td>
             <td colspan="2" style="width:49.65pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;text-align:center;'><span style='font-family:"Times New Roman",serif;'>Telefone:</span></p>
             </td>
             <td style="width:127.55pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">(99) 9-9999-9999</span></p>
             </td>
         </tr>
     </tbody>
@@ -210,19 +219,33 @@
 <style>
     #requerimento {
         border-radius: 5px;        
-        height: 80vh;
-        width: 47vw;
+        height: 82vh;
+        width: 42vw;
+        font-family: 'Ibarra Real Nova', serif;
     }
     #linkReq {       
         font-size: 14px;
         background: red;
         color: white;
-        padding: 10px 0px;
+        padding: 10px 5px;
         width: 30vw;
-        border-radius: 5px;        
+        border-radius: 5px;
+        font-family: 'Ibarra Real Nova', serif; 
+        text-decoration: none;        
     }
     #marginReq {
-        margin-top: 40px;
+        margin-top: 20px;
         text-align: center;
+    }
+    #tituloReq {
+        text-align: center;
+        background: red;
+        color: white;
+        font-family: 'Ibarra Real Nova', serif;
+        margin-top: 5px;        
+    }
+    #textoExemplo {
+        font-family: 'Ibarra Real Nova', serif;
+        font-weight: bold;
     }
 </style>
