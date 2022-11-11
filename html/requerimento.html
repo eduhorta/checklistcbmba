@@ -1,7 +1,8 @@
 <div id="requerimento">
-    <p id="tituloReq">Informar código CNAE para preenchimento automático dos campos Risco, Divisão e Ocupação.</p>
-    <p id="tituloReq">Alterar <b>APENAS</b> campos escritos em vermelho</p>
-<p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+    <p id="tituloReq">Informar código CNAE para preenchimento <span style="text-decoration: underline">automático</span> dos campos Risco, Divisão e Ocupação.</p>
+    <p id="tituloReq">Alterar apenas campos escritos em <span style="color:red; font-weight: bold;">VERMELHO</span></p>
+
+<div id="tabela">
 <table style="width: 4.8e+2pt;border: none;border-collapse:collapse;">
     <tbody>
         <tr>
@@ -39,7 +40,7 @@
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>CNPJ:</span></p>
             </td>
             <td style="width:177.2pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.65pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">00.000.000/0000-00</span><span style='font-family:"Times New Roman",serif;'>&nbsp; &nbsp; &nbsp;</span></p>
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span id="textoExemplo">00.000.000/0000-00</span></p>
             </td>
             <td colspan="2" style="width:99.4pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm .5pt 0cm .5pt;height:19.65pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;Porte da Institui&ccedil;&atilde;o:</span></p>
@@ -210,6 +211,7 @@
         </tr>
     </tbody>
 </table>
+</div>
 <div id="marginReq">
 <a id="linkReq" href="http://www.cbm.ba.gov.br/sites/default/files/2021-05/requerimento_padrao_2021_padrao_sistema_novo_2_1.doc">DOWNLOAD REQUERIMENTO</a>
 </div>
@@ -220,9 +222,12 @@
 <style>
     #requerimento {
         border-radius: 5px;        
-        height: 87vh;
-        width: 42vw;
+        height: 650px;
+        width: 650px;
         font-family: 'Ibarra Real Nova', serif;
+        background-color: rgba(255, 255, 255);
+        align-items: center;
+        margin-left: 50px;
     }
     #linkReq {       
         font-size: 14px;
@@ -235,15 +240,15 @@
         text-decoration: none;        
     }
     #marginReq {
-        margin-top: 20px;
+        margin-top: 10px;
         text-align: center;
     }
     #tituloReq {
-        text-align: center;
-        background: red;
-        color: white;
+        text-align: center;;
+        font-size: 20px;        
         font-family: 'Ibarra Real Nova', serif;
-        margin-top: 5px;        
+        margin-top: 5px;
+        font-weight: bold;        
     }
     #textoExemplo {
         font-family: 'Ibarra Real Nova', serif;
@@ -252,5 +257,9 @@
     }
     #divisao, #ocupacao, #risco {
         font-weight: bold;
+    }
+    #tabela {
+        margin-left: auto;
+        margin-right: auto;
     }
 </style>

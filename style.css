@@ -10,8 +10,7 @@ body {
   width: 100vw;
 }
 
-#menu-items {
-  margin-right: clamp(0.5rem, 12vw, 2rem);
+#menu-items {  
   margin-left: 25px;
   position: relative;
   width: 35vw;  
@@ -121,15 +120,6 @@ body.menu-toggled > .meta-link > span {
 
 #source-link > i {
   color: rgb(94, 106, 210);
-}
-
-#requerimento {
-  background-color: rgba(255, 255, 255);
-  align-items: center;
-  height: 500px;
-  width: 640px;
-  margin-left: 100px;
-  padding: 25px;
 }
 
 #anexo {

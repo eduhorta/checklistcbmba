@@ -1,7 +1,9 @@
 <div id="anexo">
+    <p id="tituloReq">Informar código CNAE para preenchimento automático dos campos Divisão e Ocupação.</p>
+    <p id="tituloReq">Alterar apenas campos escritos em <span style="color:red; font-weight: bold;">VERMELHO</span></p>
     <div>
-        <p id="digitarCNAE">Digitar CNAE para definir ocupação</p>
-        <input type="text" id="idCNAE"></input><input type="submit" id="submitCNAE" onclick="aplicarCNAE()"></input></div>
+        <p id="digitarCNAE"><b>Digitar CNAE para definir divisão e ocupação.</b></p>
+        <input type="text" id="idCNAE" placeholder="Digitar apenas números"></input><input type="submit" id="submitCNAE" onclick="aplicarCNAE()"></input></div>
 <table style="border-collapse:collapse;border:none;">
     <tbody>
         <tr>
@@ -16,56 +18,56 @@
         </tr>
         <tr>
             <td colspan="6" style="width:494.45pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Nome Fantasia:&nbsp;</span></p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Nome Fantasia:&nbsp;</span><span id="textoExemplo">EMPRESA EXEMPLO</span></p>
             </td>
         </tr>
         <tr>
             <td colspan="5" style="width:367.65pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Raz&atilde;o Social:&nbsp;</span></p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Raz&atilde;o Social:&nbsp;</span><span id="textoExemplo">EMPRESA EXEMPLO LTDA</span></p>
             </td>
             <td style="width:126.8pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">CNPJ/CPF:&nbsp;</span></p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">CNPJ/CPF:&nbsp;</span><span id="textoExemplo">00.000.000/0000-00</span></p>
             </td>
         </tr>
         <tr>
             <td colspan="6" style="width:494.45pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Logradouro p&uacute;blico:&nbsp;</span></p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Logradouro p&uacute;blico:&nbsp;</span><span id="textoExemplo">RUA EXEMPLO, Nº 00</span></p>
             </td>
         </tr>
         <tr>
             <td colspan="6" style="width:494.45pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Complemento:&nbsp;</span></p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Complemento:&nbsp;</span><span id="textoExemplo">COMPLEMENTO EXEMPLO</span></p>
             </td>
         </tr>
         <tr>
             <td colspan="6" style="width:494.45pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Bairro: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Munic&iacute;pio: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; UF:&nbsp;</span></p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Bairro: <span id="textoExemplo">BAIRRO EXEMPLO</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Munic&iacute;pio: <span id="textoExemplo">CIDADE EXEMPLO</span>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; UF: <b>BA</b>&nbsp;</span><span id="textoExemplo"></span></p>
             </td>
         </tr>
         <tr>
             <td colspan="6" style="width:494.45pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:12.0pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Propriet&aacute;rio ou Respons&aacute;vel pelo Uso:&nbsp;</span></p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Propriet&aacute;rio ou Respons&aacute;vel pelo Uso:&nbsp;</span><span id="textoExemplo">FULANO PERREIRA DA SILVA</span></p>
             </td>
         </tr>
         <tr>
             <td colspan="3" style="width:179.45pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:12.0pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">CPF:</span></p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">CPF:</span><span id="textoExemplo"> 000.000.000-00</span></p>
             </td>
             <td colspan="4" style="width:315.0pt;border-top:none;border-left:  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.0pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Email:&nbsp;</span></p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Email:&nbsp;</span><span id="textoExemplo">fulanodasilva@email.com</span></p>
             </td>
         </tr>
         <tr>
             <td colspan="6" style="width:494.45pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:12.0pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Telefone:</span></p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Telefone:</span><span id="textoExemplo">(99)9-9999-9999</span></p>
             </td>
         </tr>
         <tr>
             <td colspan="4" style="width: 60.2528%; border-right: 0.1pt solid windowtext; border-bottom: 0.1pt solid windowtext; border-left: 0.1pt solid windowtext; border-image: initial; border-top: none; padding: 0cm 5.4pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">&Aacute;rea constru&iacute;da do im&oacute;vel (m&sup2;):</span></p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">&Aacute;rea constru&iacute;da do im&oacute;vel (m&sup2;):</span><span id="textoExemplo"> 00,00</span></p>
             </td>
             <td colspan="2" style="width: 39.5141%; border-top: none; border-left: none; border-bottom: 0.1pt solid windowtext; border-right: 0.1pt solid windowtext; padding: 0cm 5.4pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">N.&ordm; de pavimentos: T&eacute;rrea&nbsp;</span></p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">N.&ordm; de pavimentos: <b>TÉRREA</b></span></p>
             </td>
         </tr>
         <tr>
@@ -86,12 +88,12 @@
         </tr>
         <tr>
             <td colspan="6" style="width:494.45pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:12.0pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Ocupa&ccedil;&atilde;o do subsolo: -</span></p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Ocupa&ccedil;&atilde;o do subsolo: </span><b>SEM OCUPAÇÃO</b></p>
             </td>
         </tr>
         <tr>
             <td colspan="6" style="width:494.45pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:12.0pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">N&uacute;mero de ocupantes (popula&ccedil;&atilde;o):&nbsp;</span></p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">N&uacute;mero de ocupantes (popula&ccedil;&atilde;o):&nbsp;</span><span id="textoExemplo">INFORMAR POPULAÇÃO FIXA</span></p>
             </td>
         </tr>
         <tr>
@@ -101,13 +103,13 @@
         </tr>
         <tr>
             <td style="width: 3.6531%; border-right: 0.1pt solid windowtext; border-bottom: 0.1pt solid windowtext; border-left: 0.1pt solid windowtext; border-image: initial; border-top: none; padding: 0cm 5.4pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:115%;'>X</p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:115%;'><b>X</b></p>
             </td>
             <td colspan="2" style="width: 53.4565%; border-top: none; border-left: none; border-bottom: 0.1pt solid windowtext; border-right: 0.1pt solid windowtext; padding: 0cm 5.4pt;">
                 <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Sa&iacute;das de emerg&ecirc;ncia&nbsp;</span></p>
             </td>
             <td style="width: 3.4965%; border-top: none; border-left: none; border-bottom: 0.1pt solid windowtext; border-right: 0.1pt solid windowtext; padding: 0cm 5.4pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:115%;'>X</p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:115%;'><b>X</b></p>
             </td>
             <td colspan="2" style="width: 39.5141%; border-top: none; border-left: none; border-bottom: 0.1pt solid windowtext; border-right: 0.1pt solid windowtext; padding: 0cm 5.4pt;">
                 <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Ilumina&ccedil;&atilde;o de emerg&ecirc;ncia&nbsp;</span></p>
@@ -115,7 +117,7 @@
         </tr>
         <tr>
             <td style="width: 3.6531%; border-right: 0.1pt solid windowtext; border-bottom: 0.1pt solid windowtext; border-left: 0.1pt solid windowtext; border-image: initial; border-top: none; padding: 0cm 5.4pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:115%;'>X</p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:115%;'><b>X</b></p>
             </td>
             <td colspan="2" style="width: 53.4565%; border-top: none; border-left: none; border-bottom: 0.1pt solid windowtext; border-right: 0.1pt solid windowtext; padding: 0cm 5.4pt;">
                 <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Extintores&nbsp;</span></p>
@@ -129,7 +131,7 @@
         </tr>
         <tr>
             <td style="width: 3.6531%; border-right: 0.1pt solid windowtext; border-bottom: 0.1pt solid windowtext; border-left: 0.1pt solid windowtext; border-image: initial; border-top: none; padding: 0cm 5.4pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:115%;'>X</p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;line-height:115%;'><b>X</b></p>
             </td>
             <td colspan="2" style="width: 53.4565%; border-top: none; border-left: none; border-bottom: 0.1pt solid windowtext; border-right: 0.1pt solid windowtext; padding: 0cm 5.4pt;">
                 <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Sinaliza&ccedil;&atilde;o de emerg&ecirc;ncia&nbsp;</span></p>
@@ -151,12 +153,12 @@
 
 <style>
     #anexo {
-        margin-bottom: 25px;
-        margin-left: 150px;
-        width: 80%;
+        margin-bottom: 25px;        
+        width: 55vw;
         border-radius: 5px;
-        height: 75vh;
-        font-family: 'Ibarra Real Nova', serif;         
+        height: 600px;
+        font-family: 'Ibarra Real Nova', serif;
+        margin-right: 50px;         
     }
     #linkAnexo {
         margin-top: 10px;
@@ -180,5 +182,20 @@
     }
     #idCNAE {
         margin-bottom: 10px;
+    }
+    #tituloReq {
+        text-align: center;
+        font-size: 20px;        
+        font-family: 'Ibarra Real Nova', serif;
+        margin-top: 5px;
+        font-weight: bold;        
+    }
+    #textoExemplo {
+        font-family: 'Ibarra Real Nova', serif;
+        font-weight: bold;
+        color: red;
+    }
+    #ocupacao, #divisao {
+        font-weight: bold;
     }
 </style>
