@@ -1017,6 +1017,8 @@ function aplicarCNAE() {
             document.getElementById('divisao').innerHTML = categorias[i].divisao;
             document.getElementById('ocupacao').innerHTML = categorias[i].ocupacao;
             document.getElementById('risco').innerHTML = categorias[i].carga;
-        } 
+        } else if (cnae.length < 7) {
+            return console.log('testando')
+        }
     }
 }
