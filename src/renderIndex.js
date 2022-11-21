@@ -557,7 +557,7 @@ function aplicarCNAE() {
     {id: "8592903", divisao:"E-2", ocupacao: "E - Educacional e Cultura Física", carga: "300"},
     {id: "8592999", divisao:"E-2", ocupacao: "E - Educacional e Cultura Física", carga: "300"},
     {id: "8593700", divisao:"E-2", ocupacao: "E - Educacional e Cultura Física", carga: "300"},
-    {id: "8599601", divisao:"E-2", ocupacao: "E - Educacional e Cultura Física", carga: "300"},
+    {id: "8599601", divisao:"E-4", ocupacao: "E - Educacional e Cultura Física", carga: "300"},
     {id: "8599602", divisao:"E-2", ocupacao: "E - Educacional e Cultura Física", carga: "300"},
     {id: "8599603", divisao:"E-2", ocupacao: "E - Educacional e Cultura Física", carga: "300"},
     {id: "8591100", divisao:"E-3", ocupacao: "E - Educacional e Cultura Física", carga: "300"},

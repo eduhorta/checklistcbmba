@@ -8,6 +8,7 @@ body {
   display: flex;
   height: 100vh;
   width: 100vw;
+  
 }
 
 #menu-items {  
@@ -133,4 +134,15 @@ body.menu-toggled > .meta-link > span {
 #conteudo {
   z-index: 3;
   margin-right: 0px;  
+}
+
+@media print{
+  #menu-items {
+    display: none;
+  }
+  #conteudo {
+    margin: -100px;
+    height: 200px;
+    width: 2000px;
+  }
 }
