@@ -10,7 +10,7 @@
     <div id="requerimento2">
         <div id="governoSuperior">
             <div><img id="logoEstado" src="../img/logoEstado.jpg" alt="" srcset=""></div>
-            <p id="cabecalhoEstado"> 
+            <p class="esconder" id="cabecalhoEstado"> 
                 <span style='font-size:26px;font-family:"Arial",sans-serif;'><strong><span style='font-family:"Times New Roman",serif;'>ESTADO DA BAHIA</span></strong></span><br>
                 <span style='font-size:26px;font-family:"Arial",sans-serif;'><strong><span style='font-family:"Times New Roman",serif;'>Corpo de Bombeiros Militar</span></strong></span><br><br>
                 <span style='font-size:16px;font-family:"Arial",sans-serif;'><strong><span style='font-family:"Times New Roman",serif;'>REQUERIMENTO PADRÃO - SOLICITAÇÃO</span></strong></span><br>
@@ -19,115 +19,134 @@
             </p>
         <div><img id="logoSuperior" src="../img/logoCBM.jpg" alt="" srcset=""></div>
         </div>  
-<table style="border: none;border-collapse:collapse;">
+<table style="border: solid black 0.1pt;border-collapse:collapse;">
     <tbody>
         <tr>
-            <td style="width:99.05pt;border:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.6pt;">
+            <td style="width:99.05pt;border:solid black 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.6pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Nome fantasia:</span></p>
             </td>
-            <td colspan="4" style="width:382.9pt;border-top:solid black 1.0pt;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.6pt;">
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><input style="border: 0; width: 100%;" type="text"></p>
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+            <td colspan="4" style="width:382.9pt;border-top: none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:13.6pt;">
+                
+                <p style='margin:0cm;border-top:solid white 0.1pt;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><input class="preencher" style="width: 98%;margin-bottom: 10px" type="text"></p>
+                
             </td>
         </tr>
         <tr>
-            <td style="width:99.05pt;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:19.95pt;">
+            <td style="width:99.05pt;border:solid black 0.1pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:19.95pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Raz&atilde;o Social:</span></p>
             </td>
-            <td style="width:177.2pt;border:solid black 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:19.95pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+            <td style="width:177.2pt;border:solid black 0.1pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:19.95pt;">
+                <p style='margin:0cm;margin-bottom: 15px;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;<input class="preencher" style="width: 98%;" type="text"></span></p>
             </td>
-            <td style="width:70.9pt;border-top:none;border-left:none;border-bottom:  solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.95pt;">
+            <td style="width:70.9pt;border-top:none;border-left:none;border-bottom:  solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.95pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;text-align:center;'><span style='font-family:"Times New Roman",serif;'>C&oacute;digo</span></p>
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;text-align:center;'><span style='font-family:"Times New Roman",serif;'>CNAE:</span></p>
             </td>
-            <td colspan="2" style="width:134.8pt;border-top:none;border-left:  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.95pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-size:11px;font-family:"Times New Roman",serif;color:red;'>&nbsp;</span></p>
+            <td colspan="2" style="width:134.8pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.95pt;">
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-size:11px;font-family:"Times New Roman",serif;color:red;'>&nbsp;</span>
+
+                <!-- CAMPO DO CNAE -->
+
+                <input type="text"  class="preencher" id="idCNAE" placeholder="Digitar apenas números"></input><input type="submit" id="submitCNAE" onclick="aplicarCNAE()"></input>
+                </p>
             </td>
         </tr>
         <tr>
-            <td style="width:99.05pt;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:19.65pt;">
+            <td style="width:99.05pt;border:solid black 0.1pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:19.65pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>CNPJ:</span></p>
             </td>
-            <td style="width:177.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.65pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+            <td style="width:177.2pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.65pt;">
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><input class="preencher" style="width: 98%;margin-bottom: 10px" type="text"></p>
             </td>
-            <td colspan="2" style="width:99.4pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm .5pt 0cm .5pt;height:19.65pt;">
+            <td colspan="2" style="width:99.4pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm .5pt 0cm .5pt;height:19.65pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;Porte da Institui&ccedil;&atilde;o:</span></p>
             </td>
-            <td style="width:106.3pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm .5pt 0cm .5pt;height:19.65pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+            <td style="width:106.3pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm .5pt 0cm .5pt;height:19.65pt;">
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><input class="preencher" style="width: 90%;" type="text"></p>
             </td>
         </tr>
         <tr>
-            <td style="width:99.05pt;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt;">
+            <td style="width:99.05pt;border:solid black 0.1pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Logradouro</span><span style='font-family:"Times New Roman",serif;'>:</span></p>
             </td>
-            <td colspan="2" style="width:248.1pt;border-top:none;border-left:  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt;">
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+            <td colspan="2" style="width:248.1pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt;">
+                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><input class="preencher" style="width: 98%;margin-bottom: 10px" type="text"></p>
             </td>
-            <td style="width:28.5pt;border-top:none;border-left:none;border-bottom:  solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt;">
+            <td style="width:28.5pt;border-top:none;border-left:none;border-bottom:  solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>N&ordm;:</span></p>
             </td>
-            <td style="width:106.3pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt;">
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+            <td style="width:106.3pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:17.95pt;">
+                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><input class="preencher" style="width: 98%;margin-bottom: 10px" type="text"></p>
             </td>
         </tr>
         <tr>
-            <td style="width:99.05pt;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:16.95pt;">
+            <td style="width:99.05pt;border:solid black 0.1pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:16.95pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Complemento e Refer&ecirc;ncia:</span></p>
             </td>
-            <td style="width:177.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:16.95pt;">
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+            <td style="width:177.2pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:16.95pt;">
+                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><input class="preencher" style="width: 98%;margin-bottom: 10px" type="text"></p>
             </td>
-            <td style="width:70.9pt;border-top:none;border-left:none;border-bottom:  solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm .5pt 0cm .5pt;height:16.95pt;">
+            <td style="width:70.9pt;border-top:none;border-left:none;border-bottom:  solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm .5pt 0cm .5pt;height:16.95pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>CEP:</span></p>
             </td>
-            <td colspan="2" style="width:134.8pt;border-top:none;border-left:  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm .5pt 0cm .5pt;height:16.95pt;">
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+            <td colspan="2" style="width:134.8pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:16.95pt;">
+                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><input class="preencher" style="width: 90%;" type="text"></p>
             </td>
         </tr>
         <tr>
-            <td style="width:99.05pt;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:15.95pt;">
+            <td style="width:99.05pt;border:solid black 0.1pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:15.95pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Bairro:</span></p>
             </td>
-            <td style="width:177.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.95pt;">
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+            <td style="width:177.2pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:15.95pt;">
+                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><input class="preencher" style="width: 98%;margin-bottom: 10px" type="text"></p>
             </td>
-            <td style="width:70.9pt;border-top:none;border-left:none;border-bottom:  solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm .5pt 0cm .5pt;height:15.95pt;">
+            <td style="width:70.9pt;border-top:none;border-left:none;border-bottom:  solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm .5pt 0cm .5pt;height:15.95pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Munic&iacute;</span><span style='font-family:"Times New Roman",serif;'>pio:</span></p>
             </td>
-            <td colspan="2" style="width:134.8pt;border-top:none;border-left:  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm .5pt 0cm .5pt;height:15.95pt;">
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+            <td colspan="2" style="width:134.8pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:15.95pt;">
+                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><input class="preencher" style="width: 90%;margin-bottom: 10px" type="text"></p>
             </td>
         </tr>
         <tr>
-            <td style="width:99.05pt;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:18.65pt;">
+            <td style="width:99.05pt;border:solid black 0.1pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:18.65pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Risco (Mj/m&sup2;):</span></p>
             </td>
-            <td style="width:177.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.65pt;">
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+            <td style="width:177.2pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.65pt;">
+                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span>
+
+                    <!-- CAMPO RISCO -->
+                    <span id="risco"></span>
+
+                </p>
             </td>
-            <td style="width:70.9pt;border-top:none;border-left:none;border-bottom:  solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm .5pt 0cm .5pt;height:18.65pt;">
+            <td style="width:70.9pt;border-top:none;border-left:none;border-bottom:  solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm .5pt 0cm .5pt;height:18.65pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Altura:</span></p>
             </td>
-            <td colspan="2" style="width:134.8pt;border-top:none;border-left:  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm .5pt 0cm .5pt;height:18.65pt;">
+            <td colspan="2" style="width:134.8pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:18.65pt;">
                 <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>T&Eacute;RREA</span></p>
             </td>
         </tr>
         <tr>
-            <td style="width:99.05pt;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:18.65pt;">
+            <td style="width:99.05pt;border:solid black 0.1pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:18.65pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Divis&atilde;o:</span></p>
             </td>
-            <td style="width:177.2pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.65pt;">
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+            <td style="width:177.2pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:18.65pt;">
+                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span>
+                
+                    <!-- CAMPO DIVISAO -->
+                    <span id="divisao"></span>
+
+                </p>
             </td>
-            <td style="width:70.9pt;border-top:none;border-left:none;border-bottom:  solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm .5pt 0cm .5pt;height:18.65pt;">
+            <td style="width:70.9pt;border-top:none;border-left:none;border-bottom:  solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm .5pt 0cm .5pt;height:18.65pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Ocupa&ccedil;&atilde;o:</span></p>
             </td>
-            <td colspan="2" style="width:134.8pt;border-top:none;border-left:  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm .5pt 0cm .5pt;height:18.65pt;">
-                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+            <td colspan="2" style="width:134.8pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:18.65pt;">
+                <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span>
+                
+                    <!-- CAMPO OCUPAÇÃO -->
+                    <span id="ocupacao"></span>
+                </p>
             </td>
         </tr>
     </tbody>
@@ -137,70 +156,70 @@
 <table id="tabelaServico" style="border: none;border-collapse:collapse;">
     <tbody>
         <tr>
-            <td colspan="2" style="width:120.5pt;border:solid black 1.0pt;height:28.8pt;">
+            <td colspan="2" style="width:120.5pt;border:solid black 0.1pt;height:28.8pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Tipo de Servi&ccedil;o:</span></p>
             </td>
-            <td colspan="2" style="width:141.7pt;border:solid black 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td colspan="2" style="width:141.7pt;border:solid black 0.1pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>VISTORIA</span></p>
             </td>
-            <td colspan="2" style="width:63.85pt;border:solid black 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td colspan="2" style="width:63.85pt;border:solid black 0.1pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&Aacute;rea Constru&iacute;da:</span></p>
             </td>
-            <td colspan="2" style="width:155.9pt;border-top:solid black 1.0pt;border-left:none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; m&sup2;</span></p>
+            <td colspan="2" style="width:155.9pt;border-top:solid black 0.1pt;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><input class="preencher" style="width: 40%;margin-bottom: 10px" type="text"><span style='font-family:"Times New Roman",serif;'>&nbsp; m&sup2;</span></p>
             </td>
         </tr>
         <tr>
-            <td colspan="2" style="width:120.5pt;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td colspan="2" style="width:120.5pt;border:solid black 0.1pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Respons&aacute;vel T&eacute;cnico</span></p>
             </td>
-            <td colspan="4" style="width:205.55pt;border-top:none;border-left:  none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td colspan="4" style="width:205.55pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
             </td>
-            <td colspan="2" style="width:155.9pt;border-top:none;border-left:  none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
+            <td colspan="2" style="width:155.9pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;text-align:center;'><span style='font-family:  "Times New Roman",serif;'>CREA &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CAU</span></p>
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;N&deg;&nbsp;</span></p>
             </td>
         </tr>
         <tr>
-            <td colspan="2" style="width:120.5pt;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td colspan="2" style="width:120.5pt;border:solid black 0.1pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Solicitante/Respons&aacute;vel</span></p>
             </td>
-            <td colspan="5" style="width:233.9pt;border-top:none;border-left:  none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+            <td colspan="5" style="width:233.9pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><input class="preencher" style="width: 98%;margin-bottom: 10px" type="text"></p>
             </td>
-            <td style="width:127.55pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; Cargo:</span><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+            <td style="width:127.55pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp; Cargo:</span><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><input class="preencher" style="width: 50%;" type="text"></p>
             </td>
         </tr>
         <tr>
-            <td colspan="3" style="width:163.05pt;border-top:none;border-left:  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td colspan="3" style="width:163.05pt;border-top:none;border-left:  solid black 0.1pt;border-bottom:solid black 0.1pt;border-right:solid windowtext 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>CPF/ RG</span></p>
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><input class="preencher" style="width: 98%;margin-bottom: 10px" type="text"></p>
             </td>
-            <td colspan="2" style="width:141.7pt;border-top:none;border-left:  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
+            <td colspan="2" style="width:141.7pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;&Oacute;rg&atilde;o Expedidor:</span></p>
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><input class="preencher" style="width: 60%;margin-bottom: 10px" type="text"></p>
             </td>
-            <td colspan="2" style="width:49.65pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
+            <td colspan="2" style="width:49.65pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;text-align:center;'><span style='font-family:"Times New Roman",serif;'>E-mail:</span></p>
             </td>
-            <td style="width:127.55pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+            <td style="width:207.55pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><input class="preencher" style="width: 90%;margin-bottom: 10px" type="text"></p>
             </td>
         </tr>
         <tr>            
-            <td style="width:63.8pt;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td style="width:63.8pt;border:solid black 0.1pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;text-align:center;'><span style='font-family:"Times New Roman",serif;'>Assinatura:</span></p>
             </td>
-            <td colspan="4" style="width:240.95pt;border-top:none;border-left:  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+            <td colspan="4" style="width:240.95pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><span id="assinatura">ASSINATURA DIGITAL OU IMPRESSA</span></p>
             </td>
-            <td colspan="2" style="width:49.65pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
+            <td colspan="2" style="width:49.65pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;text-align:center;'><span style='font-family:"Times New Roman",serif;'>Telefone:</span></p>
             </td>
-            <td style="width:127.55pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
+            <td style="width:127.55pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span><input class="preencher" style="width: 90%;margin-bottom: 10px" type="text"></p>
             </td>
         </tr>
         <tr>
@@ -224,38 +243,38 @@
 <table style="border: none;width:459.0pt;border-collapse:collapse;">
     <tbody>
         <tr>
-            <td style="width:82.4pt;border:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td style="width:82.4pt;border:solid black 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Recebido em:</span></p>
             </td>
-            <td style="width:109.55pt;border:solid black 1.0pt;border-left:  none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td style="width:109.55pt;border:solid black 0.1pt;border-left:  none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
             </td>
-            <td style="width:76.75pt;border:solid black 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td style="width:76.75pt;border:solid black 0.1pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Hor&aacute;rio:</span></p>
             </td>
-            <td style="width:190.3pt;border:solid black 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td style="width:190.3pt;border:solid black 0.1pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
             </td>
         </tr>
         <tr>
-            <td style="width:82.4pt;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td style="width:82.4pt;border:solid black 0.1pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Protocolo:</span></p>
             </td>
-            <td style="width:109.55pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td style="width:109.55pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
             </td>
-            <td style="width:76.75pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td style="width:76.75pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Nome:</span></p>
             </td>
-            <td style="width:190.3pt;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td style="width:190.3pt;border-top:none;border-left:none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
             </td>
         </tr>
         <tr>
-            <td style="width:82.4pt;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td style="width:82.4pt;border:solid black 0.1pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;text-align:center;'><span style='font-family:"Times New Roman",serif;'>Assinatura:</span></p>
             </td>
-            <td colspan="3" style="width:376.6pt;border-top:none;border-left:  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
+            <td colspan="3" style="width:376.6pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
             </td>
         </tr>
@@ -281,24 +300,24 @@
     <tbody>
             
         <tr>            
-            <td style="width:70.9pt;border:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td style="width:70.9pt;border:solid black 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>N&uacute;mero de Protocolo:</span></p>
             </td>
-            <td style="width:86.9pt;border:solid black 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td style="width:86.9pt;border:solid black 0.1pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
             </td>
-            <td style="width:75.8pt;border:solid black 1.0pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td style="width:75.8pt;border:solid black 0.1pt;border-left:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;text-align:center;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Data:</span></p>
             </td>
-            <td style="width:134.95pt;border:solid black 1.0pt;border-left:  none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td style="width:134.95pt;border:solid black 0.1pt;border-left:  none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
             </td>
         </tr>
         <tr>
-            <td style="width:70.9pt;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
+            <td style="width:70.9pt;border:solid black 0.1pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>Assinatura:&nbsp;</span></p>
             </td>
-            <td colspan="3" style="width:297.65pt;border-top:none;border-left:  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
+            <td colspan="3" style="width:297.65pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm .5pt 0cm .5pt;height:28.8pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span></p>
             </td>
         </tr>
@@ -321,6 +340,9 @@
     }
     #cabecalhoEstado {
         text-align: center;
+    }
+    #submitCNAE {
+        margin-left: 6px;
     }
     @media print{
     #menu-items {
@@ -361,9 +383,19 @@
     }
     #cabecalhoEstado {
         width: 420px;
+        
     }
     #tabelaServico {
         width: 723px;
+    }
+    .preencher {
+        border: 0;
+    }
+    input[type=submit] {
+        display: none;
+    }
+    #assinatura {
+        display: none;
     }
     }
     @media screen {
@@ -378,6 +410,9 @@
             display: none;
         }
         #logoEstado {
+            display: none;
+        }
+        .esconder {
             display: none;
         }
     }
