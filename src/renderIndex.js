@@ -1016,6 +1016,7 @@ function aplicarCNAE() {
         if (categorias[i].id == cnae) {
             document.getElementById('divisao').innerHTML = categorias[i].divisao;
             document.getElementById('ocupacao').innerHTML = categorias[i].ocupacao;
+            document.getElementById('proprietario').innerHTML = document.getElementById('responsavel').value;
             document.getElementById('risco').innerHTML = categorias[i].carga;
         } else if (cnae.length == 1 || cnae.length == 2 || cnae.length == 3 || cnae.length == 4 || cnae.length == 5 || cnae.length == 6){
             return alert('CNAE INVÁLIDO OU OCUPAÇÃO DEVE SER REGULARIZADA DE OUTRA FORMA!')

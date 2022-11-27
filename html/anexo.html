@@ -65,7 +65,7 @@
         </tr>
         <tr>
             <td colspan="8" style="width:494.45pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:12.0pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Propriet&aacute;rio ou Respons&aacute;vel pelo Uso: <input class="preencher" style="width: 40%;font-size:11px;" type="text"></span></p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Propriet&aacute;rio ou Respons&aacute;vel pelo Uso: <input class="preencher" id="responsavel" style="width: 40%;font-size:11px;" type="text"></span></p>
             </td>
         </tr>
         <tr>
@@ -189,6 +189,7 @@
         </tr>
     </tbody>
 </table>
+<div id="printPDF"><button style="background:#C85250;color:white;border:0;padding:5px;" onclick="window.print();return false;">IMPRIMIR PDF</button></div>
 <div id="esconder">
 <table id="anexoEscondido" style="border-collapse:collapse;border:none;">
     <tbody>
@@ -308,7 +309,7 @@
                 <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;text-align:center;line-height:115%;'><span style="font-size:12px;line-height:115%;">&nbsp;</span></p>
                 <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;text-align:center;line-height:115%;'><span style="font-size:12px;line-height:115%;">&nbsp;</span></p>
                 <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;text-align:center;line-height:115%;'><span style="font-size:12px;line-height:115%;">_________________________________________________________________________________________</span></p>
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;text-align:center;line-height:115%;'><span style="font-size:12px;line-height:115%;">Nome do Propriet&aacute;rio ou Respons&aacute;vel pelo uso da edifica&ccedil;&atilde;o</span></p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;text-align:center;line-height:115%;'><span style="font-size:12px;line-height:115%;"><span id="proprietario"></span></span></p>
             </td>
         </tr>
     </tbody>
@@ -329,6 +330,11 @@
     #logoCBM {
         width: 100px;
         height: 100px;
+    }
+    #printPDF {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
     }
     @media screen {
         #anexo {
@@ -359,6 +365,9 @@
         }
         #aplicarCNAE {
             display: none;
-        }        
+        } 
+        #printPDF {
+            display: none;
+        }       
     }
 </style>
