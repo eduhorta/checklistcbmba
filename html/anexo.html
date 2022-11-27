@@ -91,12 +91,12 @@
         </tr>
         <tr>
             <td colspan="8" style="width:494.45pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Ocupa&ccedil;&atilde;o (Divis&atilde;o conforme tabela 1 do Decreto Estadual 16.302/15): </span></p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Ocupa&ccedil;&atilde;o (Divis&atilde;o conforme tabela 1 do Decreto Estadual 16.302/15): </span><span id="divisao"></span></p>
             </td>
         </tr>
         <tr>
             <td colspan="8" style="width:494.45pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:12.0pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Descri&ccedil;&atilde;o do uso ou ocupa&ccedil;&atilde;o: </span></p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">Descri&ccedil;&atilde;o do uso ou ocupa&ccedil;&atilde;o: </span><span id="ocupacao"></span></spa></p>
             </td>
         </tr>
         <tr>
@@ -106,7 +106,7 @@
         </tr>
         <tr>
             <td colspan="8" style="width:494.45pt;border:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:12.0pt;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">N&uacute;mero de ocupantes (popula&ccedil;&atilde;o): <input class="preencher" style="width: 10%;font-size:11px;" type="text"></span></p>
+                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;color:black;line-height:115%;'><span style="font-size:12px;line-height:115%;">N&uacute;mero de ocupantes (popula&ccedil;&atilde;o): <input class="preencher" style="width: 10%;font-size:11px;" type="text"></span> <span id="aplicarCNAE" style="color:#C85250;font-weight: 500;">Definir Ocupação/Descrição - Digitar CNAE <input type="text"  class="preencher" id="idCNAE" placeholder="Digitar apenas números"><input type="submit" id="submitCNAE" onclick="aplicarCNAE()"></input></span></p>
             </td>
         </tr>
         <tr>
@@ -356,6 +356,9 @@
         }
         .preencher {
             border: 0;
+        }
+        #aplicarCNAE {
+            display: none;
         }        
     }
 </style>
