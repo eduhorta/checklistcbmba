@@ -39,8 +39,9 @@
                 <p style='margin:0cm;margin-bottom: 15px;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;<input class="preencher" style="width: 98%;" type="text"></span></p>
             </td>
             <td style="width:70.9pt;border-top:none;border-left:none;border-bottom:  solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.95pt;">
-                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;text-align:center;'><span style='font-family:"Times New Roman",serif;'>C&oacute;digo</span></p>
+                <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;text-align:center;'><span style='font-family:"Times New Roman",serif;'>Código</span></p>
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;text-align:center;'><span style='font-family:"Times New Roman",serif;'>CNAE:</span></p>
+                <span id="obrigatorio"><span id="printPDF" style="color:#C85250">Campo obrigatório!</span></span>
             </td>
             <td colspan="2" style="width:134.8pt;border-top:none;border-left:  none;border-bottom:solid black 0.1pt;border-right:solid black 0.1pt;padding:0cm 5.4pt 0cm 5.4pt;height:19.95pt;">
                 <p style='margin:0cm;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-size:11px;font-family:"Times New Roman",serif;color:red;'>&nbsp;</span>
@@ -115,7 +116,7 @@
                 <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span>
 
                     <!-- CAMPO RISCO -->
-                    <span id="risco"></span>
+                    <span id="risco"><span id="printPDF" style="color:#C85250">Preencher nº CNAE para definir!</span></span>
 
                 </p>
             </td>
@@ -134,7 +135,7 @@
                 <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span>
                 
                     <!-- CAMPO DIVISAO -->
-                    <span id="divisao"></span>
+                    <span id="divisao"><span id="printPDF" style="color:#C85250">Preencher nº CNAE para definir!</span></span>
 
                 </p>
             </td>
@@ -145,7 +146,7 @@
                 <p style='margin:0cm;text-align:left;font-size:13px;font-family:"Arial",sans-serif;'><span style='font-family:"Times New Roman",serif;'>&nbsp;</span>
                 
                     <!-- CAMPO OCUPAÇÃO -->
-                    <span id="ocupacao"></span>
+                    <span id="ocupacao"><span id="printPDF" style="color:#C85250">Preencher nº CNAE para definir!</span></span>
                 </p>
             </td>
         </tr>
@@ -422,6 +423,9 @@
         }
         .esconder {
             display: none;
+        }
+        .obrigatorio {
+            color:#C85250
         }
     }
 </style>

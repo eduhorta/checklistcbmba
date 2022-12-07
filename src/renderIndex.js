@@ -1010,13 +1010,15 @@ function aplicarCNAE() {
     {id: "5829800", divisao: "I-2", ocupacao: "I - Industrial", carga: "400"},
     {id: "8292000", divisao: "I-2", ocupacao: "I - Industrial", carga: "100"},
 ];
-    const cnae = document.getElementById('idCNAE').value    
+    const cnae = document.getElementById('idCNAE').value
+    let obrigatorio = document.getElementsByClassName('obrigatorio').innerHTML       
 
     for(let i=0; i<categorias.length; i++) {
         if (categorias[i].id == cnae) {
             document.getElementById('divisao').innerHTML = categorias[i].divisao;
             document.getElementById('ocupacao').innerHTML = categorias[i].ocupacao;            
             document.getElementById('risco').innerHTML = categorias[i].carga;
+            document.getElementById('obrigatorio').innerHTML = '';            
         } else if (cnae.length == 1 || cnae.length == 2 || cnae.length == 3 || cnae.length == 4 || cnae.length == 5 || cnae.length == 6){
             return alert('CNAE INVÁLIDO OU OCUPAÇÃO DEVE SER REGULARIZADA DE OUTRA FORMA!')
         }
